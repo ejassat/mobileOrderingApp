@@ -1,0 +1,264 @@
+header{
+    margin: auto;
+    margin-bottom: 0;
+    padding:10px;
+    width: 607px;
+    height: 167px;
+    flex-shrink: 0;
+    background-image: url(images/backgroundshoe-removebg.png);
+    background-size: 270px 175px;
+    background-repeat: no-repeat;
+    background-position: 250px;
+    background-color: #E7E7E7;
+    transition: background-image 0.5s ease-in-out;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-left: 63px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.slogan{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-left: 65px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.page-container {
+    display: flex; /* Use flexbox to center horizontally and vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Make the container fill the viewport height */
+    flex-direction: column; /* Stack content vertically */
+    background-color: #ffffff; /* Optional background color */
+}
+
+#list-items, .order-section {
+    margin: auto; 
+    padding: 10px; 
+    width: 607px;
+    background-color: #ffffff; 
+}
+
+/* Style your payment modal here */
+.payment-modal {
+    display: none;
+    position: fixed;
+    margin: auto;
+    padding: 0 24px;
+    top: 80px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8B8B8B;
+    border-radius: 5px;
+    max-width: 524px;
+    height: 542px;
+    background-color: #FFFFFF;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.name-input,
+.card-number-input,
+.security-code {
+    padding: 15px;
+    width: 475px;
+    margin: 24px 0 ;
+    
+}
+
+h2, p{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30px;
+}
+
+.item-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+/* Style for item image */
+.item-image img {
+    width: 116px;
+    height: 116px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Style for item info */
+.item-info {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Fill available space */
+}
+
+/* Style for item text */
+.item-text {
+    flex: 1; /* Fill available space */
+}
+
+.item-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.item-colours {
+    margin-bottom: 5px;
+    color: #8b8b8b;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.order-section-header {
+    text-align: center;
+    font-size: 30px; /* Center-align the text within the header */
+}
+  
+.order-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align all content within the order section */
+    text-align: center; /* Center-align text within the order section */
+    width: 580px;
+    margin: 0 auto;
+}
+
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+    margin: 0 auto; /* Center the container horizontally */
+}
+  
+.order-item {
+    flex-grow: 1;
+    font-size: 28px;
+    padding-left: 0;
+}
+  
+.remove-item-btn {
+    background-color: #FFFFFF;
+    color: #BBBBBB;
+    border: none;
+    cursor: pointer;
+}
+  
+.order-price {
+    text-align: right;
+    min-width: 50px;
+    font-size: 20px;
+}
+/* Style for the "Add" button */
+.add-btn {
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #3c3c3c;
+    border: 1px solid #3c3c3c;
+    opacity: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make the button round */
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+.completed-order-txt > p {
+    color: #065F46;
+    font-size: 32px;
+    text-align: center;
+    background: #ECFDF5;
+    padding: 50px 60px;
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+    margin: 20px auto;
+}
+
+.total-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-right: 10px;
+}
+
+.total-price-figure {
+    font-size: 1.2em;
+}
+
+.complete-order-btn {
+    text-align: center;
+    background-color: #16DB99;
+    color: white;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.complete-order-btn:hover {
+    background-color: #16DB98;
+}
+
+#modal-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+input[type="text"] {
+    height: 30px;
+    margin: 5px;
+}
+
+.payment-modal button[type="submit"] {
+    text-align: center;
+    background-color: #16DB99;
+    color: white;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .payment-modal button[type="submit"]:hover {
+    background-color: #16DB99;
+  }

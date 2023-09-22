@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <title>LaceUp</title>
+    </head>
+    <body>
+        <div class="page-container">
+            <header>
+                <div>
+                    <h1 id="headertext-1">LaceUp</h1>
+                    <p id="slogan">The Sneaker Home</p>
+                </div>
+            </header>
+            <main id="list-items">
+                <!--Shoes display here-->
+            </main>
+            <section>
+                <div class="order-section-container" id="order-section">
+                    <!--order section goes here-->
+                </div>
+            </section>
+            <div class="payment-modal" id="payment-modal">
+                <div>
+                <p class="modal-title">Enter card details</p>
+                    <form>
+                        <input type="text" id="name-input" class="name-input" placeholder="Enter your name" required>
+                        <input type="text" class="card-number-input" placeholder="Enter card number" required>
+                        <input type="text" class="security-code" placeholder="Enter CVV" required>
+                        <button type="submit" id="pay-btn">Pay</button>
+                    </form>
+                </div>
+            </div>
+            <script src="script.js" type="module"></script>
+    </body>
+    </html>
